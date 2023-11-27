@@ -23,13 +23,13 @@ const Login = () => {
                     <div className="relative">
                     <input type="email" placeholder="Email Address" className="input w-full input-bordered ring-2" />
                         <button className="absolute top-3 right-3 hover:text-primary btn-xs">
-                            <i className="fa fa-user-circle"></i>
+                            <i className="text-sm fa fa-user-circle"></i>
                         </button>
                     </div>
                         <div className="relative">
                     <input type="password" placeholder="Password" className="input w-full input-bordered ring-2" />
                         <button className="absolute top-3 right-3 hover:text-primary btn-xs">
-                            <i className="fa fa-eye"></i>
+                            <i className="text-sm fa fa-eye"></i>
                         </button>
                     </div>
                     <div className="flex flex-col items-center justify-between">
