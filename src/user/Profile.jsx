@@ -17,14 +17,14 @@ const Profile = () => {
                           </div>
                    </div>
                 </div>
-                <div className="absolute w-full p-2 text-2xl flex justify-between">
+                <div className="absolute text-base-100 w-full p-3 text-2xl flex justify-between">
                     <div className="left flex flex-col">
                         <i className="fa-solid fa-circle-chevron-left"></i>
                         <div className="text-xs font-semibold">
                             Back
                         </div>
                     </div>
-                    <h1 className="text-2xl font-bold text-white">
+                    <h1 className="text-2xl font-bold">
                         Raccoon
                     </h1>
                     <div className="right flex flex-col">
@@ -34,10 +34,49 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="absolute bottom-0 w-full p-3 gap-3 flex justify-center">
+                    <button className={'btn btn-sm ring-2 ring-secondary ring-offset-1 btn-outline btn-secondary'}>
+                        Follow
+                        <i className={"fa-solid fa-user-plus"}></i>
+                    </button>
+
+                    <button className={'btn btn-sm ring-2 ring-success ring-offset-1 btn-outline btn-success'}>
+                        Inbox
+                        <i className={"fa-solid fa-envelope"}></i>
+                    </button>
+
+                </div>
             </div>
 
             <div
                 className="m-3 p-3 sm:p-4 md:p-10 bg-gray-100 border-2 border-blue-500 rounded-2xl shadow-lg max-w-sm w-full sm:w-1/2 md:w-1/3">
+                <div className="flex mx-3 justify-between">
+                    <div className="flex flex-col justify-center items-center">
+                        <div className="text-sm font-semibold text-gray-500">
+                            Followers
+                        </div>
+                        <div className="text-xs font-bold">
+                            1.2K
+                        </div>
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                        <div className="text-sm font-semibold text-gray-500">
+                            Following
+                        </div>
+                        <div className="text-xs font-bold">
+                            1.2K
+                        </div>
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                        <div className="text-sm font-semibold text-gray-500">
+                            Projects
+                        </div>
+                        <div className="text-xs font-bold">
+                            5
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
