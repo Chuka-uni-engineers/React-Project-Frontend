@@ -27,10 +27,10 @@ const Profile = () => {
                     <h1 className="text-2xl font-bold">
                         Raccoon
                     </h1>
-                    <div className="right flex flex-col">
-                        <i className="fa-solid fa-palette"></i>
-                        <div className="text-xs font-semibold">
-                            Edit
+                    <div className="right relative flex flex-col">
+                        <i className="fa-solid fa-bell"></i>
+                        <div className="absolute left-3 top-[-5px] rounded-full bg-red-500 text-white text-xs font-semibold w-4 h-4 flex justify-center items-center">
+                            2
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const Profile = () => {
 
             <div
                 className="m-3 p-3 sm:p-4 md:p-10 bg-gray-100 border-2 border-blue-500 rounded-2xl shadow-lg max-w-sm w-full sm:w-1/2 md:w-1/3">
-                <div className="flex mx-3 justify-between">
+                <div className="flex px-3 border-b-2 pb-2 border-gray-300 justify-between">
                     <div className="flex flex-col justify-center items-center">
                         <div className="text-sm font-semibold text-gray-500">
                             Followers
@@ -77,7 +77,18 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="flex flex-col gap-2 mt-3">
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">About Me</span>
+                        </label>
+                        <textarea className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+                    </div>
+                </div>
             </div>
+
+
         </div>
     )
 }
