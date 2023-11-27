@@ -12,6 +12,32 @@ export default {
       },
     },
   },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#4285f4",
+
+          "secondary": "#4285f4",
+
+          "accent": "#ffffff",
+
+          "neutral": "#6b7280",
+
+          "base-100": "#f5d0fe",
+
+          "info": "#68df88",
+
+          "success": "#fbbc05",
+
+          "warning": "#ee685d",
+
+          "error": "#ea4335",
+        },
+      },
+    ],
+  },
   plugins: [require("daisyui")],
 }
 
