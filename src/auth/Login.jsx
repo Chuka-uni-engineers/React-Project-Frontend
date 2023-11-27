@@ -3,10 +3,10 @@ import React from 'react';
 const Login = () => {
     return (
         <div className="flex items-center justify-center h-screen bg-gray-100">
-            <div className="p-10 bg-gray-100 border-2 border-blue-500 rounded-2xl shadow-lg w-1/3">
+            <div className="m-3 p-2 sm:p-4 md:p-10 bg-gray-100 border-2 border-blue-500 rounded-2xl shadow-lg w-full sm:w-1/2 md:w-1/3">
                 <div className="flex flex-col items-center mb-8 space-y-4">
-                    <i className="fas fa-user-circle text-6xl"></i>
-                    <h1 className="text-3xl font-bold uppercase">Welcome</h1>
+                    <i className="fa-brands text-6xl fa-google-wallet"></i>
+                    <h1 className="text-3xl font-bold">Chuka Auth</h1>
                 </div>
 
                 <button className="btn w-full outline-gray-400 text-gray-400" type="button">
@@ -20,8 +20,18 @@ const Login = () => {
                     <span className="w-1/4 border-b-2 border-gray-500 lg:w-1/3"></span>
                 </div>
                 <form className="mt-8 space-y-6">
+                    <div className="relative">
                     <input type="email" placeholder="Email Address" className="input w-full input-bordered ring-2" />
+                        <button className="absolute top-3 right-3 hover:text-primary btn-xs">
+                            <i className="fa fa-user-circle"></i>
+                        </button>
+                    </div>
+                        <div className="relative">
                     <input type="password" placeholder="Password" className="input w-full input-bordered ring-2" />
+                        <button className="absolute top-3 right-3 hover:text-primary btn-xs">
+                            <i className="fa fa-eye"></i>
+                        </button>
+                    </div>
                     <div className="flex flex-col items-center justify-between">
                         <button className="btn w-full btn-primary text-white uppercase" type="button">
                             Sign In
