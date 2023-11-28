@@ -52,7 +52,7 @@ const Profile = () => {
             </div>
 
             <div
-                className="m-3 p-3 bg-gray-100 border-2 border-blue-500 rounded-2xl shadow-lg max-w-sm w-full">
+                className="m-3 p-3 bg-gray-100 overflow-clip border-2 border-blue-500 rounded-2xl shadow-lg max-w-sm w-full">
                 <div className="flex px-3 border-b-2 pb-2 border-gray-300 justify-between">
                     <div className="flex flex-col justify-center items-center">
                         <div className="text-sm font-semibold text-gray-500">
@@ -201,23 +201,23 @@ const Profile = () => {
                 </div>
 
                 {/*Social Media icon links*/}
-                <div className="flex bg-gray-700 m-[-20px] gap-3 mt-3">
-                    <a href="#" className="btn btn-ghost btn-circle">
+                <div className="flex justify-center bg-gray-700 text-base-100 m-[-15px] gap-3 mt-3">
+                    <a href="#" className="btn btn-sm my-2 btn-ghost btn-circle">
                         <i className="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="#" className="btn btn-ghost btn-circle">
+                    <a href="#" className="btn btn-sm my-2 btn-ghost btn-circle">
                         <i className="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="#" className="btn btn-ghost btn-circle">
+                    <a href="#" className="btn btn-sm my-2 btn-ghost btn-circle">
                         <i className="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" className="btn btn-ghost btn-circle">
+                    <a href="#" className="btn btn-sm my-2 btn-ghost btn-circle">
                         <i className="fa-brands fa-github"></i>
                     </a>
-                    <a href="#" className="btn btn-ghost btn-circle">
+                    <a href="#" className="btn btn-sm my-2 btn-ghost btn-circle">
                         <i className="fa-brands fa-whatsapp"></i>
                     </a>
-                    <a href="#" className="btn btn-ghost btn-circle">
+                    <a href="#" className="btn btn-sm my-2 btn-ghost btn-circle">
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
