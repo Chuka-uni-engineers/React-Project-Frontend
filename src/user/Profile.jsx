@@ -12,7 +12,7 @@ const Profile = () => {
                    <div className="relative">
                        <img src="https://i.pravatar.cc/300" alt="avatar"
                             className="rounded-full h-40 w-40 border-4 border-white shadow-sm"/>
-                          <div className="absolute btn btn-xs btn-circle ring-2 bottom-2 right-2 rounded-full p-1">
+                          <div className="absolute btn btn-xs btn-circle ring-2 b ghost ring-white ring-2 bottom-2 right-2 rounded-full p-1">
                                 <i className="fa-solid fa-camera"></i>
                           </div>
                    </div>
@@ -86,8 +86,51 @@ const Profile = () => {
                         <textarea className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
                     </div>
                 </div>
-            </div>
 
+                <div className="carousel mt-3 w-full">
+                    <div id="slide1" className="carousel-item relative w-full">
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" className="btn btn-xs btn-circle ring btn-ghost ring-white">❮</a>
+                            <a href="#slide2" className="btn btn-xs btn-circle ring btn-ghost ring-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" className="carousel-item relative w-full">
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" className="btn btn-xs btn-circle ring btn-ghost ring-white">❮</a>
+                            <a href="#slide3" className="btn btn-xs btn-circle ring btn-ghost ring-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" className="carousel-item relative w-full">
+
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" className="btn btn-xs btn-circle ring btn-ghost ring-white">❮</a>
+                            <a href="#slide4" className="btn btn-xs btn-circle ring btn-ghost ring-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" className="carousel-item relative w-full">
+
+                        <div className="card w-full bg-base-100 shadow-xl image-full">
+                            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                            <div className="card-body p-4">
+                                <h2 className="card-title">Project Epic</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem.
+                                </p>
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-sm ring-1 ring-white ring-offset-1 ring-offset-transparent">
+                                        <i className="fa-solid fa-mountain"></i>
+                                        <span>Explore</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="absolute z-50 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" className="btn btn-xs btn-circle ring btn-ghost ring-white">❮</a>
+                            <a href="#slide1" className="btn btn-xs btn-circle ring btn-ghost ring-white">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     )
