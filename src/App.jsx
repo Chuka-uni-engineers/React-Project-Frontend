@@ -5,6 +5,8 @@ import Login from './auth/Login';
 import Register from './auth/Register';
 import Home from './home/Home';
 import Profile from './user/Profile';
+import About from './home/About';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +18,10 @@ function App() {
         <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile/>} />
         <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        
+       
+    
       </Routes>
     </Router>
   );
