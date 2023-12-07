@@ -8,6 +8,7 @@ const Home = () => {
         { path: "/profile", name: "Profile" },
         { path: "/settings", name: "Settings" },
         { path: "/logout", name: "Logout" },
+        { path: "/leaders", name: "Leaders"},
     ];
 
     return (
